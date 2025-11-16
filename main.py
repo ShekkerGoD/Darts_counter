@@ -33,7 +33,7 @@ while True:
         print(f"\n----- Darts thrown: {darts_thrown} -----\n\nYou've scored: {int(main_input)}\n\nPoints left: {start_score}\n\n----------\n")
     if start_score <= 170 and start_score > 0:
         print(f"\n----- Darts thrown: {darts_thrown} -----\n\n----- CHECKOUT -----\n\nYou required {start_score}\n\n----------\n")
-    if start_score < 0:
+    if start_score < 0: # Добавить еще условие где равно одному, что тоже невозможно
         print(f"\n----- Darts thrown: {darts_thrown} -----\n\n----- BUSTED -----\n\nYou've busted score!\n")
         start_score += int(main_input)
         print(f"----- CHECKOUT -----\n\nYou required {start_score}\n\n----------\n")
