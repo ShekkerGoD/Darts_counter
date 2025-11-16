@@ -10,7 +10,7 @@ Details:
 
 This is a current version
 
---- version 0.2 (in proccess) ---
+--- version 0.2 (in process) ---
 
 Details:
 
