@@ -7,7 +7,7 @@ main_input: str = "" # score of visit (3 darts) or exit, quit
 # functions
 
 def greeting() -> str:
-    print("\nDarts counter v0.1\n\nTo end program: type exit or quit\n\n----------\n")
+    print("\nDarts counter v0.2\n\nTo end program: type exit or quit\n\n----------\n")
 
 # main part
 
