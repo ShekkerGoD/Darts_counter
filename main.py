@@ -27,16 +27,17 @@ while True:
             darts_thrown += 3
     except ValueError:
         darts_thrown -= 3
-        print("\n\n----- Not valid input -----\nEnter a score or type valid exit\n\n----------\n")
+        print("\n\n----- Not valid input -----\n\nEnter a score or type valid exit\n\n----------\n")
     
+    if start_score < 0 or start_score == 1: # score 1 is also bust, due its disability to checkout
+        print(f"\n----- Darts thrown: {darts_thrown} -----\n\n----- BUSTED -----\n\nYou've busted score!\n")
+        start_score += int(main_input)
+        print(f"----- CHECKOUT -----\n\nYou required {start_score}\n\n----------\n")
+        continue
     if start_score > 170:
         print(f"\n----- Darts thrown: {darts_thrown} -----\n\nYou've scored: {int(main_input)}\n\nPoints left: {start_score}\n\n----------\n")
     if start_score <= 170 and start_score > 0:
         print(f"\n----- Darts thrown: {darts_thrown} -----\n\n----- CHECKOUT -----\n\nYou required {start_score}\n\n----------\n")
-    if start_score < 0: # Добавить еще условие где равно одному, что тоже невозможно
-        print(f"\n----- Darts thrown: {darts_thrown} -----\n\n----- BUSTED -----\n\nYou've busted score!\n")
-        start_score += int(main_input)
-        print(f"----- CHECKOUT -----\n\nYou required {start_score}\n\n----------\n")
     if start_score == 0: 
         print(f"\n----- GAME SHOT -----\n\nYou've finished leg with {darts_thrown} darts!\n")
         break
