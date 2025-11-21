@@ -26,7 +26,6 @@ while True:
             start_score -= int(main_input)
             darts_thrown += 3
     except ValueError:
-        darts_thrown -= 3
         print("\n\n----- Not valid input -----\n\nEnter a score or type valid exit\n\n----------\n")
         continue
     
