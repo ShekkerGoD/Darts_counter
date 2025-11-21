@@ -1,8 +1,8 @@
 # global variables
 
-start_score: int = 501 # standard game of x01 with 501 points
-darts_thrown: int = 0
-main_input: str = "" # score of visit (3 darts) or exit, quit
+start_score:    int = 501 # standard game of x01 with 501 points
+darts_thrown:   int = 0
+main_input:     str = "" # score of visit (3 darts) or exit, quit
 
 # functions
 
@@ -19,7 +19,7 @@ while True:
         main_input = input("Enter score: ")
         if main_input in {"quit", "Quit", "exit", "Exit", "QUIT", "EXIT"}:
             break
-        if int(main_input) in [163, 166, 169, 172, 173, 175, 176, 178, 179] or int(main_input) > 180:
+        if int(main_input) in {163, 166, 169, 172, 173, 175, 176, 178, 179} or int(main_input) > 180:
             print(f"\n\n----- Not valid input -----\n\nEnter a valid score\n\n----------\n")
             continue
         else:
