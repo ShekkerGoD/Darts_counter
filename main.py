@@ -45,5 +45,5 @@ while True:
     if start_score <= 170 and start_score > 0:
         print(f"\n----- Darts thrown: {darts_thrown} -----\n\n----- CHECKOUT -----\n\nYou required {start_score}\n\n----------\n")
     if start_score == 0: 
-        print(f"\n----- GAME SHOT -----\n\nYou've finished leg with {darts_thrown} darts!\n\nYour average for 3 darts is {avg_score(start_score=501, darts_thrown=darts_thrown)}\n")
+        print(f"\n----- GAME SHOT -----\n\nYou've finished leg with {darts_thrown} darts!\n\nYour average for 3 darts is {avg_score(501, darts_thrown)}\n")
         break
