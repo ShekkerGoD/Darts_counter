@@ -29,6 +29,8 @@ while True:
         print("\n\n----- Not valid input -----\n\nEnter a score or type valid exit\n\n----------\n")
         continue
     
+    # check-score logic for each iteration
+
     if start_score < 0 or start_score == 1: # score 1 is also bust, due its disability to checkout
         print(f"\n----- Darts thrown: {darts_thrown} -----\n\n----- BUSTED -----\n\nYou've busted score!\n")
         start_score += int(main_input)
