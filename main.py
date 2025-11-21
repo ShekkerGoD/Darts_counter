@@ -28,6 +28,7 @@ while True:
     except ValueError:
         darts_thrown -= 3
         print("\n\n----- Not valid input -----\n\nEnter a score or type valid exit\n\n----------\n")
+        continue
     
     if start_score < 0 or start_score == 1: # score 1 is also bust, due its disability to checkout
         print(f"\n----- Darts thrown: {darts_thrown} -----\n\n----- BUSTED -----\n\nYou've busted score!\n")
