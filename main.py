@@ -9,6 +9,10 @@ main_input:     str = "" # score of visit (3 darts) or exit, quit
 def greeting() -> str:
     print("\nDarts counter v0.2\n\nTo end program: type exit or quit\n\n----------\n")
 
+
+def avg_score(start_score: int = 501, darts_thrown: int = 0) -> float:
+    return round(start_score / darts_thrown * 3, 1)
+
 # main part
 
 greeting()
@@ -41,5 +45,5 @@ while True:
     if start_score <= 170 and start_score > 0:
         print(f"\n----- Darts thrown: {darts_thrown} -----\n\n----- CHECKOUT -----\n\nYou required {start_score}\n\n----------\n")
     if start_score == 0: 
-        print(f"\n----- GAME SHOT -----\n\nYou've finished leg with {darts_thrown} darts!\n")
+        print(f"\n----- GAME SHOT -----\n\nYou've finished leg with {darts_thrown} darts!\n\nYour average for 3 darts is {avg_score(start_score=501, darts_thrown=darts_thrown)}\n")
         break
