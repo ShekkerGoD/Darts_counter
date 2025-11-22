@@ -7,7 +7,7 @@ main_input:     str = "" # score of visit (3 darts) or exit, quit
 # functions
 
 def greeting() -> str:
-    return "\nDarts counter v0.2\n\nTo end program: type exit or quit\n\n----------\n"
+    print("\nDarts counter v0.2\n\nTo end program: type exit or quit\n\n----------\n")
 
 
 def avg_score(start_score: int = 501, darts_thrown: int = 0) -> float:
