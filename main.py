@@ -28,7 +28,7 @@ while True:
             continue
         else:
             start_score -= int(main_input)
-            if start_score == 0:
+            if start_score == 0: # needs to be finished
                 darts_thrown += int(input("Darts needed to finish: "))
             else:
                 darts_thrown += 3
