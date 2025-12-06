@@ -78,7 +78,7 @@ def main():
                     print("\n----- Not valid input -----\n\nEnter a score (or darts finished) or type valid exit\n\n----------\n")
                     continue
             try:
-                print(f"----- CHECKOUT -----\n\nYou required {start_score}\n\n----------\n")
+                print(f"\n----- CHECKOUT -----\n\nYou required {start_score}\n\n----------\n")
                 main_input = input("Enter score: ")
                 if main_input in {"quit", "Quit", "exit", "Exit", "QUIT", "EXIT"}:
                     break
